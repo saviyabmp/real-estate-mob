@@ -1,5 +1,6 @@
 npm-debug.log
 .DS_Store
+.theia
 
 *.js.map
 app/**/*.js

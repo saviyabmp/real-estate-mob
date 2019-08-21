@@ -1,1 +1,6 @@
 npm i @nativescript/schematics
+
+
+#export ANDROID_HOME="/workspace/android-sdk/"
+#export PATH="${PATH}:${ANDROID_HOME}tools/:${ANDROID_HOME}platform-tools/"
+#build command     tns build ios --emulator

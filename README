@@ -1,6 +1,9 @@
+npm i @angular/cli
 npm i @nativescript/schematics
+npm i @types/jest
 
+export ANDROID_HOME="/workspace/android-sdk/"
+export PATH="${PATH}:${ANDROID_HOME}tools/:${ANDROID_HOME}platform-tools/"
 
-#export ANDROID_HOME="/workspace/android-sdk/"
-#export PATH="${PATH}:${ANDROID_HOME}tools/:${ANDROID_HOME}platform-tools/"
-#build command     tns build ios --emulator
+tns build android --emulator
+tns build ios --emulator

@@ -1,4 +1,4 @@
-FROM gitpod/workspace-full
+FROM gitpod/workspace-full-vnc
 
 
 
@@ -6,10 +6,10 @@ FROM gitpod/workspace-full
 #export PATH="${PATH}:${ANDROID_HOME}tools/:${ANDROID_HOME}platform-tools/"
 #build command     tns build ios --emulator
 USER gitpod
-RUN npm i @angular/cli
-RUN npm i @nativescript/schematics
-RUN npm i @types/jest
-RUN npm install nativescript -g --unsafe-perm
+RUN yes n | npm i @angular/cli
+RUN yes n | npm i @nativescript/schematics
+RUN yes n | npm i @types/jest
+RUN yes n | npm install nativescript -g --unsafe-perm
 
 #export ANDROID_HOME="/workspace/android-sdk/"
 #export PATH="${PATH}:${ANDROID_HOME}tools/:${ANDROID_HOME}platform-tools/"

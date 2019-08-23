@@ -1,6 +1,7 @@
 npm i @angular/cli
 npm i @nativescript/schematics
 npm i @types/jest
+npm install nativescript -g --unsafe-perm
 
 export ANDROID_HOME="/workspace/android-sdk/"
 export PATH="${PATH}:${ANDROID_HOME}tools/:${ANDROID_HOME}platform-tools/"

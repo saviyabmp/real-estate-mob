@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HelloworldService } from '../helloworld/helloworld.service';
-import { EventData, Page } from 'tns-core-modules/ui/page/page';
+import { EventData } from "tns-core-modules/data/observable";
+import { Page } from 'tns-core-modules/ui/page';
 import { Label } from "tns-core-modules/ui/label";
 
 @Component({
@@ -30,15 +31,12 @@ export class HomeComponent implements OnInit {
   }
 
   public tapAction() {
-      //this.label1.text = "id is ${this.message.id} and "
-      this.label1.text = "id is ...... "
-      //this.label2.text = "content is ${this.message.content}"
-      this.label2.text = "content is ......"
+      var id = this.message.id;
+      var content = this.message.content;
+      this.label1.text = "id is " + id + " and";
+      this.label2.text = "content is "+ content;
   }
-
 }
-
-
 
 export class MessageModel {
     id: number;

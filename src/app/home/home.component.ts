@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
   constructor(private data: HelloworldService) { }
 
     ngOnInit() {
-        this.data.getJSONResponse("this.name").subscribe(data => {this.message = data;});
+        this.data.getJSONResponse(this.name).subscribe(data => {this.message = data;});
     }
 
     public pageLoaded(args: EventData) {

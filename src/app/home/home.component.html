@@ -1,8 +1,9 @@
 <Page (loaded)="pageLoaded($event)">
 <ActionBar title="My App" class="action-bar"></ActionBar>
  <StackLayout class="page">
+   <TextField hint="Enter name" autocorrect="false" (returnPress)="onReturn($event)" class="input input-border"></TextField>
    <Button text="Tap" class="btn btn-primary" (tap)="tapAction()"></Button>
-   <Label id="lbl1" text="title 1"  backgroundColor="white"></Label>
-   <Label id="lbl2" text="title 2" textWrap="true"  backgroundColor="white"></Label>
+   <Label id="lbl1" text="The id"  backgroundColor="white"></Label>
+   <Label id="lbl2" text="The content" textWrap="true"  backgroundColor="white"></Label>
  </StackLayout>
 </Page>
